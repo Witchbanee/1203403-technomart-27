@@ -12,15 +12,21 @@
 		<div class="header-top">
 			<div class="header-logo">
 				<a href="index.html">
-					<img src="img/logo-top.png" width="109" height="19" alt="Логотип Техномарта">
+					<img src="img/logo.png" width="109" height="19" alt="Логотип Техномарта">
 				</a>
 			</div>
+
+			<form class="">
+				<input placeholder="Поиск:" type="search" id="search" name="search">
+				<label for="search"></label>
+			</form>
+
 			<ul>
 				<li>
 					<a class="bookmarks" href="#">Закладки: 0</a>
 				</li>
 				<li>
-					<a class="basket" href="#">Корзина: 0</a>
+					<a class="basket" href="#">Корзина: 10</a>
 				</li>
 				<li>
 					<a class="orders" href="#">Оформить заказ</a>
@@ -107,47 +113,58 @@
 			</li>
 		</ul>
 
+
 		<h1>Перфораторы</h1>
-		<section>
-			<h2>Производители:</h2>
-			<ul>
-				<li>
-					<input type="checkbox" checked name="Bosch" id="Bosch">
-					<label for="Bosch">Bosch</label>
-				</li>
-				<li>
-					<input type="checkbox" name="Интерскол" id="inter">
-					<label for="inter">Интерскол</label>
-				</li>
-				<li>
-					<input type="checkbox" checked name="Makita" id="Makita">
-					<label for="Makita">Makita</label>
-				</li>
-				<li>
-					<input type="checkbox" name="Dewalt" id="Dewalt">
-					<label for="Dewalt">Dewalt</label>
-				</li>
-				<li>
-					<input type="checkbox" name="Hitachi" id="Hitachi">
-					<label for="Hitachi">Hitachi</label>
-				</li>
-			</ul>
-		</section>
 
-		<section>
-			<h2>Питание:</h2>
-			<ul>
-				<li>
-					<input type="radio" checked name="akk" id="akk">
-					<label for="akk">Аккамуляторные</label>
-				</li>
-				<li>
-					<input type="radio" name="set" id="set">
-					<label for="set">Сетевые</label>
-				</li>
-			</ul>
+
+		<form>
+			<fieldset>
+				<legend>
+					<h2>Производители:</h2>
+				</legend>
+				<ul>
+					<li>
+						<input type="checkbox" checked name="Bosch" id="Bosch">
+						<label for="Bosch">Bosch</label>
+					</li>
+					<li>
+						<input type="checkbox" name="Интерскол" id="inter">
+						<label for="inter">Интерскол</label>
+					</li>
+					<li>
+						<input type="checkbox" checked name="Makita" id="Makita">
+						<label for="Makita">Makita</label>
+					</li>
+					<li>
+						<input type="checkbox" name="Dewalt" id="Dewalt">
+						<label for="Dewalt">Dewalt</label>
+					</li>
+					<li>
+						<input type="checkbox" name="Hitachi" id="Hitachi">
+						<label for="Hitachi">Hitachi</label>
+					</li>
+				</ul>
+			</fieldset>
+		</form>
+
+		<form>
+			<fieldset>
+				<legend>
+					<h2>Питание:</h2>
+				</legend>
+				<ul>
+					<li>
+						<input type="radio" checked name="akk" id="akk">
+						<label for="akk">Аккамуляторные</label>
+					</li>
+					<li>
+						<input type="radio" name="set" id="set">
+						<label for="set">Сетевые</label>
+					</li>
+				</ul>
+			</fieldset>
 			<button type="submit">Показать</button>
-		</section>
+		</form>
 
 
 		<ul>
@@ -251,6 +268,8 @@
 			</li>
 		</ul>
 
+
+		
 
 
 		<div class="pages">
@@ -352,6 +371,25 @@
 			</div>
 		</div>
 	</footer>
+
+
+	<section>
+		<h2>Товар добавлен в корзину!</h2>
+		<a href="#">Оформить заказ</a>
+		<button type="button">Продолжить покупки</button>
+		<button type="button">Закрыть</button>
+	</section>
+
+	<!-- сделал два варианта всплывающего окна, section думаю привильный, но интересно что скажешь по поводу второго --> 
+
+	<article>
+		<h2>Товар добавлен в корзину!</h2>
+		<button type="button">Закрыть</button>
+		<div>
+			<a href="#">Оформить заказ</a>
+			<button type="button">Продолжить покупки</button>
+		</div>
+	</article>
 </body>
 
 </html>

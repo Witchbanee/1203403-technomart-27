@@ -15,6 +15,12 @@
 					<img src="img/logo.png" width="109" height="19" alt="Логотип Техномарта">
 				</a>
 			</div>
+
+			<form class="">
+				<input placeholder="Поиск:" type="search" id="search" name="search">
+				<label for="search"></label>
+			</form>
+
 			<ul>
 				<li>
 					<a class="bookmarks" href="#">Закладки: 0</a>
@@ -51,6 +57,7 @@
 				</li>
 			</ul>
 		</div>
+
 		<nav>
 			<ul class="navigation">
 				<li>
@@ -195,6 +202,35 @@
 			</div>
 		</div>
 	</footer>
+
+	<section>
+		<h2 class="visual-hidden">Форма обратной связи</h2>
+		<form action="https://echo.htmlacademy.ru" method="post" name="feedback">
+			<p>
+				<label for="name-feedback">Ваше имя:</label>
+				<input type="text" name="name" id="name-feedback" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="email-feedback">Ваш e-mail:</label>
+				<input type="email" name="emai" id="email-feedback" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="feedback-text">Текст пиьма:</label>
+				<textarea name="text" id="feedback-text" placeholder="В свободной форме"></textarea>
+			</p>
+			<button type="submit">Отправить</button>
+		</form>
+		<button type="button">Закрыть</button>
+	</section>
+
+
+	<section>
+		<h2 class="visual-hidden">Как до нас добраться</h2>
+		<p>
+			<img src="img/map.jpg" width="940" height="446" alt="Офис компании по адресу г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
+		</p>
+		<button type="button">Закрыть</button>
+	</section>
 </body>
 
 </html>
