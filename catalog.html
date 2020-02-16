@@ -120,28 +120,23 @@
 		<form>
 			<fieldset>
 				<legend>
-					<h2>Производители:</h2>
+					Производители:
 				</legend>
 				<ul>
 					<li>
-						<input type="checkbox" checked name="Bosch" id="Bosch">
-						<label for="Bosch">Bosch</label>
+						<label><input type="checkbox" checked name="Bosch" id="Bosch">Bosch</label>
 					</li>
 					<li>
-						<input type="checkbox" name="Интерскол" id="inter">
-						<label for="inter">Интерскол</label>
+						<label><input type="checkbox" name="Интерскол" id="inter">Интерскол</label>
 					</li>
 					<li>
-						<input type="checkbox" checked name="Makita" id="Makita">
-						<label for="Makita">Makita</label>
+						<label><input type="checkbox" checked name="Makita" id="Makita">Makita</label>
 					</li>
 					<li>
-						<input type="checkbox" name="Dewalt" id="Dewalt">
-						<label for="Dewalt">Dewalt</label>
+						<label><input type="checkbox" name="Dewalt" id="Dewalt">Dewalt</label>
 					</li>
 					<li>
-						<input type="checkbox" name="Hitachi" id="Hitachi">
-						<label for="Hitachi">Hitachi</label>
+						<label><input type="checkbox" name="Hitachi" id="Hitachi">Hitachi</label>
 					</li>
 				</ul>
 			</fieldset>
@@ -269,7 +264,7 @@
 		</ul>
 
 
-		
+
 
 
 		<div class="pages">
@@ -299,12 +294,13 @@
 					<img src="img/logo-down.svg" width="138" height="23" alt="Логотип Техномарта">
 				</a>
 			</div>
+
 			<div class="footer-address">
-				<p>
-					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-					+7 (812) 555-05-55
-				</p>
+				<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+					<a href="tel:+78125550555">+7 (812) 555-05-55</a>
+				</address>
 			</div>
+
 		</div>
 		<div class="all-footer-nav">
 			<ul class="footer-nav-top">
@@ -349,12 +345,17 @@
 			</div>
 
 			<div class="social">
-				<a class="social-vk" href="#"><img src="img/vk-icon.svg" height="26" width="15"
-						alt="https://vk.com/"></a>
-				<a class="social-facee" href="#"><img src="img/fb-icon.svg" height="12" width="22"
-						alt="https://facebook.com/"></a>
-				<a class="social-vk" href="#"><img src="img/insta-icon.svg" height="21" width="21"
-						alt="https://www.instagram.com/"></a>
+				<ul>
+					<li>
+						<a class="social-vk" href="#">Vkontakte</a>
+					</li>
+					<li>
+						<a class="social-facee" href="#">Facebook</a>
+					</li>
+					<li>
+						<a class="social-inst" href="#">Instagram</a>
+					</li>
+				</ul>
 			</div>
 
 			<div class="feedback">
@@ -373,23 +374,13 @@
 	</footer>
 
 
-	<section>
-		<h2>Товар добавлен в корзину!</h2>
+	<div class="visual-hidden">
+		<p>Товар добавлен в корзину!</p>
 		<a href="#">Оформить заказ</a>
 		<button type="button">Продолжить покупки</button>
 		<button type="button">Закрыть</button>
-	</section>
+	</div>
 
-	<!-- сделал два варианта всплывающего окна, section думаю привильный, но интересно что скажешь по поводу второго --> 
-
-	<article>
-		<h2>Товар добавлен в корзину!</h2>
-		<button type="button">Закрыть</button>
-		<div>
-			<a href="#">Оформить заказ</a>
-			<button type="button">Продолжить покупки</button>
-		</div>
-	</article>
 </body>
 
 </html>
