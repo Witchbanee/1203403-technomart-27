@@ -1,0 +1,441 @@
+
+/* Общие стили*/
+
+body {
+ margin: 0;
+ padding: 0;
+ 
+ font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+ font-size: 17px;
+ line-height: 18px;
+ font-weight: normal;
+ background-color: white;
+ color: black;
+}
+
+p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+ a {
+  color: white;
+  text-decoration: none;
+}
+
+fieldset {
+  border: 0 none;
+}
+
+h1 {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-family: Cuprum;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+address {
+  font-size: 14px;
+}
+
+
+/*Шапка, псевдоклассы для лого футера тут для удобства*/
+
+.header-top {
+  background-color: #293449;
+}
+
+header {
+  background-color: #f4f7f9;
+}
+
+.header-logo  {
+  background-color: #ee3643;
+  box-shadow: inset 0px -5px rgba(0, 0, 0, 0.24);
+  width: 220px;
+  height: 47px;
+  text-align: center;
+}
+
+.header-main p {
+  color: red;
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-family: Cuprum;
+  font-weight: normal;
+}
+
+.header-logo:hover,
+.footer-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-logo:active,
+.footer-logo:active {
+  background-color: #ba2732;
+}
+
+.search input {
+  background-color: transparent;
+  border: transparent;
+}
+
+.search input::placeholder {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 17px;
+  color: white;
+}
+
+.search input:focus {
+  background-color: white;
+}
+
+.orders {
+  background-color: #63a63e;
+}
+
+.orders:hover {
+  background-color: #5fbb2d;
+}
+
+.orders:active {
+  background-color: #518534;
+}
+
+.header-address span {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  font-family: "Cuprum";
+  font-style: normal;
+  font-family: Cuprum;
+}
+
+.header-address a {
+  color: #ee3643;
+  font-size: 21px;
+  font-style: normal;
+  border: solid 3px #ffffff;
+}
+
+.header-block-login a {
+  color:black;
+}
+
+.login,
+.registration {
+  background-color:white;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.login:hover,
+.registration:hover {
+  color: #ee3643;
+}
+
+.login:active,
+.registration:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
+.navigation {
+  background-color: #32425c;
+  line-height: 17px;
+  box-shadow: inset 0px -5px #293449;
+}
+
+.navigation a:hover {
+  background-color: #293449;
+}
+
+.navigation a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.502);
+}
+
+
+/* Шапка каталога, без повторения шапки index */
+
+.login-window a {
+  color: black;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.account-info a {
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.account-info li a:hover {
+  color: #ee3643;
+}
+
+.login-window a:active,
+.account-info li a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Секции main */
+
+.partners {
+  color: black;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.details,
+.feedback-block {
+  background-color: #ee3643;
+  color: white;
+}
+
+
+/* Main каталога */
+
+.catalog-heading  {
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-style: normal;
+  background-color: #f2f6f8;
+}
+
+.menu-items a,
+.menu-items li {
+  color: black;
+  font-size: 13px;
+  font-family: "PTSans";
+  text-transform: uppercase;
+}
+
+.manufacturer {
+  font-size: 15px;
+  line-height: 20px;
+  color: black;
+  font-family: "PTSans";
+  text-transform: uppercase;
+}
+
+legend h2 {
+  color: black;
+  font-size: 17px;
+  line-height: 30px;
+  font-family: "PTSans";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.show-button {
+  width: 140px;
+  height: 38px;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  font-size: 13px;
+  font-family: "PTSans";
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.power {
+  font-size: 15px;
+  font-family: "PTSans";
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product-cards article {
+  border: solid 1px #e5e5e5;
+}
+
+h3 a {
+  font-size: 18px;
+  font-family: "PTSans";
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.111;
+  text-align: center;
+}
+
+.first-price {
+  color: #999999;
+  font-weight: bold;
+  text-decoration: line-through;
+  font-size: 17px;
+}
+
+aside {
+  width: 1200px;
+  height: 261px;
+  background-color: #f4f7f9;
+  text-align: left;
+}
+
+.pages a {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "PTSans";
+  color: #000000;
+  border: solid 1px #e5e5e5;
+}
+
+.pages a:hover {
+  border: solid 1px #bdc6ca;;
+}
+
+.pages a:active {
+  border: solid 1px #ee3643;
+}
+
+.about-products {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: "PTSans";
+}
+
+aside p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Cuprum";
+}
+
+
+/* Верх футера, псевдоклассы для лого лежат в  шапке */
+
+.footer-main {
+  background-color: #32425c;
+  color: white;
+}
+
+.footer-logo {
+  color: white;
+  text-align: center;
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.footer-address address,
+.all-footer-nav {
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.all-footer-nav li:hover {
+  text-decoration: underline;
+}
+
+.footer-nav-top a:active {
+  color:rgba(241, 245, 247, 0.502);
+}
+
+
+/* Нижняя часть футера */
+
+.footer-down {
+  background-color: #293449;
+}
+
+.footer-down p {
+  font-size: 16px;
+}
+
+.feedback a:hover,
+.developed a:hover {
+  text-decoration: underline;
+}
+
+.feedback a:active,
+.developed a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.footer-nav-down a,
+.feedback a,
+.developed a {
+  color: #ffd180;
+}
+
+.footer-nav-down a:active {
+  color: rgba(255, 209, 128, 0.5) 
+}
+
+
+/* Modal map */
+
+.visualy-hidden img {
+  background-color: rgb(86, 86, 86);
+  box-shadow: 0px 0px 14.72px 1.28px rgba(47, 42, 43, 0.5);
+}
+
+
+/* Feedback modal */
+
+.visualy-hidden label {
+ font-size: 18px;
+ color: black;
+}
+
+.visualy-hidden input,
+textarea {
+  border: solid 2px #dee3e4;
+  outline: none;
+}
+
+.visualy-hidden input::placeholder,
+ textarea {
+  font-family: "PTSans";
+  font-size: 13px;
+  color: #a9a9a9;
+}
+
+.visualy-hidden input:hover,
+ textarea:hover {
+  border: solid 2px #b5b5b5;
+}
+
+.visualy-hidden input:focus,
+ textarea:focus {
+  border: solid 2px #ee3643;
+}
+
+/* Товар добавлен в корзину */
+
+.visual-hidden-basket p {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-family: "Cuprum";
+  color: black;
+}
+
+.visualy-hidden-basket {
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  width: 620px;
+  height: 282px;
+}

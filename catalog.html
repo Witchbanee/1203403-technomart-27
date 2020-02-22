@@ -4,7 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Техномарт</title>
-	<style></style>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +18,7 @@
 				</a>
 			</div>
 
-			<form class="">
+			<form class="search">
 				<input placeholder="Поиск:" type="search" id="search" name="search">
 				<label for="search"></label>
 			</form>
@@ -33,7 +35,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="heading">
+		<div class="header-main">
 			<p>
 				Интернет-магазин
 				Строительных материалов
@@ -42,9 +44,9 @@
 		</div>
 
 
-		<address class="">
+		<address class="header-address">
 			<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-			г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+			<span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
 		</address>
 
 
@@ -98,7 +100,7 @@
 
 
 	<main>
-		<ul>
+		<ul class="menu-items">
 			<li>
 				<a href="index.html"></a>
 			</li>
@@ -114,13 +116,13 @@
 		</ul>
 
 
-		<h1>Перфораторы</h1>
+		<h1 class="catalog-heading">Перфораторы</h1>
 
 
-		<form>
+		<form class="manufacturer">
 			<fieldset>
 				<legend>
-					Производители:
+					<h2>Производители:</h2>
 				</legend>
 				<ul>
 					<li>
@@ -147,10 +149,10 @@
 				<legend>
 					<h2>Питание:</h2>
 				</legend>
-				<ul>
+				<ul class="power">
 					<li>
 						<input type="radio" checked name="akk" id="akk">
-						<label for="akk">Аккамуляторные</label>
+						<label for="akk">Аккумуляторные</label>
 					</li>
 					<li>
 						<input type="radio" name="set" id="set">
@@ -158,28 +160,26 @@
 					</li>
 				</ul>
 			</fieldset>
-			<button type="submit">Показать</button>
+			<button class="show-button" type="submit">Показать</button>
 		</form>
 
 
-		<ul>
+		<ul class="product-cards">
 			<li>
 				<article>
 					<img src="img/drell3.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
-					<p>22500 Р</p>
+					<p  class="first-price">22500 Р</p>
 					<p>15500 Р</p>
 					<div><a href="#">Купить</a><button>В закладки</button></div>
 				</article>
 			</li>
-		</ul>
 
-		<ul>
 			<li>
 				<article>
 					<img src="img/drell6.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
-					<p>30500 Р</p>
+					<p class="first-price">30500 Р</p>
 					<p>25500 Р</p>
 					<div><a href="#">Купить</a><button>В закладки</button></div>
 				</article>
@@ -189,7 +189,7 @@
 				<article>
 					<img src="img/drell3.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
-					<p>22500 Р</p>
+					<p class="first-price">22500 Р</p>
 					<p>15500 Р</p>
 					<div><a href="#">Купить</a><button>В закладки</button></div>
 				</article>
@@ -208,7 +208,7 @@
 				<article>
 					<img src="img/drell3.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
-					<p>22500 Р</p>
+					<p class="first-price">22500 Р</p>
 					<p>15500 Р</p>
 					<div><a href="#">Купить</a><button>В закладки</button></div>
 				</article>
@@ -218,7 +218,7 @@
 				<article>
 					<img src="img/drell6.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
-					<p>30500 Р</p>
+					<p class="first-price">30500 Р</p>
 					<p>25500 Р</p>
 					<div><a href="#">Купить</a><button>В закладки</button></div>
 				</article>
@@ -237,7 +237,7 @@
 				<article>
 					<img src="img/drell3.jpg" alt="Перфоратор BOSCH BFG 3000">
 					<h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
-					<p>22500 Р</p>
+					<p class="first-price">22500 Р</p>
 					<p>15500 Р</p>
 					<div><a href="#">Купить</a><button>В закладки</button></div>
 				</article>
@@ -247,7 +247,7 @@
 				<article>
 					<img src="img/drell6.jpg" alt="Перфоратор BOSCH BFG 6000">
 					<h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
-					<p>30500 Р</p>
+					<p class="first-price">30500 Р</p>
 					<p>25500 Р</p>
 					<div><a href="#">Купить</a><button>В закладки</button></div>
 				</article>
@@ -268,14 +268,14 @@
 
 
 		<div class="pages">
-			<a class="one" href="#">1</a>
-			<a class="two" href="#">2</a>
-			<a class="three" href="#">3</a>
-			<a class="next-page" href="#">Следующая</a>
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">Следующая</a>
 		</div>
 
 		<aside>
-			<h2>Пара слов о перфораторах</h2>
+			<h2 class="about-products">Пара слов о перфораторах</h2>
 			<p>
 				Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
 				кирпиче, бетоне и камне.
@@ -291,7 +291,7 @@
 		<div class="footer-top">
 			<div class="footer-logo">
 				<a href="index.html">
-					<img src="img/logo-down.svg" width="138" height="23" alt="Логотип Техномарта">
+					<img src="img/footer-logo.svg" width="137" height="22" alt="Логотип Техномарта">
 				</a>
 			</div>
 
@@ -374,7 +374,7 @@
 	</footer>
 
 
-	<div class="visual-hidden">
+	<div class="visual-hidden-basket">
 		<p>Товар добавлен в корзину!</p>
 		<a href="#">Оформить заказ</a>
 		<button type="button">Продолжить покупки</button>

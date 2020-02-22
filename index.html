@@ -5,7 +5,8 @@
 	<meta charset="utf-8">
 	<title>Техномарт</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<style></style>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,12 +18,12 @@
 				</a>
 			</div>
 
-			<form class="">
+			<form class="search">
 				<input placeholder="Поиск:" type="search" id="search" name="search">
 				<label for="search"></label>
 			</form>
 
-			<ul>
+			<ul class="header-items">
 				<li>
 					<a class="bookmarks" href="#">Закладки: 0</a>
 				</li>
@@ -35,32 +36,36 @@
 			</ul>
 		</div>
 
-		<h1>
-			Интернет-магазин
-			Строительных материалов
-			и инструментов для ремонта
-		</h1>
+
+		<div class="header-main">
+			<h1>
+				Интернет-магазин
+				Строительных материалов
+				и инструментов для ремонта
+			</h1>
 
 
-		<address class="">
-			<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-			г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-		</address>
+			<address class="header-address">
+				<a href="tel:+78125550555">+7 (812) 555-05-55</a>
+				<span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+			</address>
 
 
-		<div class="logandreg">
-			<ul>
-				<li>
-					<a class="login" href="#">Войти</a>
-				</li>
-				<li>
-					<a class="registration" href="#">Регистрация</a>
-				</li>
-			</ul>
+			<div class="header-block-login">
+				<ul>
+					<li>
+						<a class="login" href="#">Войти</a>
+					</li>
+					<li>
+						<a class="registration" href="#">Регистрация</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 
-		<nav>
-			<ul class="navigation">
+		
+		<nav class="navigation">
+			<ul>
 				<li>
 					<a href="index.html">Главная</a>
 				</li>
@@ -99,7 +104,7 @@
 				Техномарт работает со многими транспортными компаниями:
 			</p>
 
-			<ul>
+			<ul class="partners">
 				<li>Деловые линии</li>
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
@@ -115,7 +120,7 @@
 			</p>
 			<a href="#"><img src="img/map.png" width="300" height="158"
 					alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
-			<button class="">Заблудились? Напишите нам!</button>
+			<a class="feedback-block" href="#">Заблудились? Напишите нам!</a>
 		</section>
 	</main>
 
@@ -124,7 +129,7 @@
 		<div class="footer-top">
 			<div class="footer-logo">
 				<a href="index.html">
-					<img src="img/logo.png" width="109" height="19" alt="Логотип Техномарта">
+					<img src="img/footer-logo.svg" width="137" height="22" alt="Логотип Техномарта">
 				</a>
 			</div>
 			<div class="footer-address">
@@ -167,6 +172,8 @@
 			</ul>
 		</div>
 
+
+		
 		<div class="footer-down">
 			<div class="copyright">
 				<p>
@@ -204,19 +211,19 @@
 		</div>
 	</footer>
 
-	<section class="visual-hidden">
+	<section class="visualy-hidden">
 		<h2>Форма обратной связи</h2>
 		<form action="https://echo.htmlacademy.ru" method="post" name="feedback">
 			<p>
-				<label for="name-feedback">Ваше имя:</label>
-				<input type="text" name="name" id="name-feedback" placeholder="Имя Фамилия">
+				<label class="name" for="name-feedback">Ваше имя:</label>
+				<input class="" type="text" name="name" id="name-feedback" placeholder="Имя Фамилия">
 			</p>
 			<p>
-				<label for="email-feedback">Ваш e-mail:</label>
+				<label class="email" for="email-feedback">Ваш e-mail:</label>
 				<input type="email" name="emai" id="email-feedback" placeholder="email@example.com">
 			</p>
 			<p>
-				<label for="feedback-text">Текст пиьма:</label>
+				<label for="feedback-text">Текст пиcьма:</label>
 				<textarea name="text" id="feedback-text" placeholder="В свободной форме"></textarea>
 			</p>
 			<button type="submit">Отправить</button>
@@ -225,10 +232,11 @@
 	</section>
 
 
-	<section class="visual-hidden">
+	<section class="visualy-hidden">
 		<h2>Как до нас добраться</h2>
 		<p>
-			<img src="img/map.jpg" width="940" height="446" alt="Офис компании по адресу г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
+			<img src="img/map.jpg" width="940" height="446"
+				alt="Офис компании по адресу г. Санкт-Петербург, Б. Конюшенная, д. 19/8">
 		</p>
 		<button type="button">Закрыть</button>
 	</section>
